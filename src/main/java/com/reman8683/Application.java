@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 
 @OpenAPIDefinition(
         info = @Info(
-                title = "discordprifileapi",
+                title = "discordprofileapi",
                 description = "API for DiscordProfile",
                 version = "0.0"
         )
