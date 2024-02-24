@@ -16,13 +16,12 @@ import org.apache.logging.log4j.Logger;
         )
 )
 
-//MTIxMDUxMzYyNDYwMzI5OTg1MA.Gt9w3P.yxz6fZ4ftQ616dL3vNIXGjrbIZjdW8kKVqxTgc
 public class Application {
     public static final Logger logger = LogManager.getLogger();
-    public static final String token = "MTIxMDUxMzYyNDYwMzI5OTg1MA.Gt9w3P.yxz6fZ4ftQ616dL3vNIXGjrbIZjdW8kKVqxTgc";
-    public static JDA jda = JDABuilder.createDefault(token).build();
+    public static JDA jda;
 
     public static void main(String[] args) {
+        jda = JDABuilder.createDefault(args[0]).build();
         Micronaut.run(Application.class, args);
     }
 }
